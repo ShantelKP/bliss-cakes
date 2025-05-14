@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background-color: #fff8f0;
+  color: #333;
+}
+
+nav {
+  background-color: #f8c8dc;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+nav a {
+  color: #5e2a2a;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav i {
+  font-size: 1.2rem;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.introduction {
+  background-image: url('https://images.pexels.com/photos/7666502/pexels-photo-7666502.jpeg?auto=compress&cs=tinysrgb&w=600https://images.pexels.com/photos/1098592/pexels-photo-1098592.jpeg?auto=compress&cs=tinysrgb&w=600');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 100px 20px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+.introduction h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.introduction button {
+  background-color: #f8c8dc;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  margin: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.introduction button a {
+  text-decoration: none;
+  color: #5e2a2a;
+}
+
+.introduction button:hover {
+  background-color: #ffc2c2;
+}
+
+.grid-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.grid-context {
+  max-width: 800px;
+  margin: auto;
+  padding: 1rem;
+  background-color: #fff0f5;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.grid-context h2 {
+  color: #7b2c2c;
+}
+
+footer {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #ddd;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.container img {
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.container img:hover {
+  transform: scale(1.05);
+}
+
+/* Dark mode toggle */
+.dark-mode {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+}
+
+.dark-mode nav {
+  background-color: #333;
+}
+
+.dark-mode .introduction {
+  text-shadow: none;
+  color: #fff;
+}
+
+.dark-mode .grid-context {
+  background-color: #2c2c2c;
+}
+
+.dark-mode .introduction button,
+.dark-mode nav a {
+  background-color: #444;
+  color: #fff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .introduction h1 {
+    font-size: 2.5rem;
+  }
+  .introduction button {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
